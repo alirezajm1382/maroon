@@ -14,7 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box sx={{ padding: "1rem", top: "0px", textAlign: "center" }}>
-        <Typography className={yellowTail.className} fontSize={50}>
+        <Typography
+          component="h1"
+          className={yellowTail.className}
+          fontSize={45}
+        >
           Maroon.
         </Typography>
       </Box>
@@ -28,7 +32,7 @@ export default function Home() {
           maxWidth: "600px",
         }}
       >
-        <Typography fontSize={30} marginBottom="5rem">
+        <Typography fontSize={20} marginBottom="5rem" component="p">
           Maroon. is a free music streaming service powered by an adventagous
           full-stack framework by Vercel, based on the amazing React frontend
           framework; Next.js!
@@ -38,10 +42,10 @@ export default function Home() {
         direction="column"
         spacing={2}
         sx={{
-          width: "400px",
+          width: "300px",
           position: "absolute",
           transform: "translate(-50%, 0)",
-          left: '50%',
+          left: "50%",
           bottom: "20px",
         }}
       >
