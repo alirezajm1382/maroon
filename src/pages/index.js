@@ -2,7 +2,11 @@ import Head from "next/head";
 import { Yellowtail } from "@next/font/google";
 import { Box, Stack, Button, Typography } from "@mui/material";
 
-const yellowTail = Yellowtail({ subsets: ["latin"], weight: ["400"] });
+const yellowTail = Yellowtail({
+  preload: true,
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function Home() {
   return (
