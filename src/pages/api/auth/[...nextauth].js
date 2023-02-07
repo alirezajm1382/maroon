@@ -6,8 +6,16 @@ export default NextAuth({
   providers: [
     // OAuth authentication providers
     Google({
-      clientId: "",
-      clientSecret: "",
+      clientId:
+        "377670931214-rhqkn4f6vjvui6nsqhc9bc4uthek83u4.apps.googleusercontent.com",
+      clientSecret: "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",
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
     }),
     Github({
       clientId: "",
