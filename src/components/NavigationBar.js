@@ -6,7 +6,12 @@ import {
   Button,
   Typography,
 } from "@mui/material";
-import { Home, Search, FeaturedPlayList, Settings } from "@mui/icons-material";
+import {
+  Home as HomeIcon,
+  Search as SearchIcon,
+  FeaturedPlayList as PlaylistIcon,
+  Settings as SettingsIcon,
+} from "@mui/icons-material";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -18,17 +23,29 @@ export function NavigationBarAuthed() {
       onChange={(event, newValue) => setValue(newValue)}
       showLabels
       sx={{
-        background: "0d0d10",
+        background: "#0d0d10",
         position: "fixed",
         bottom: "0",
         width: "100vw",
-        height: "10vh",
+        height: "9vh",
       }}
     >
-      <BottomNavigationAction label="Home" icon={<Home />} />
-      <BottomNavigationAction label="Search" icon={<Search />} />
-      <BottomNavigationAction label="Playlist" icon={<FeaturedPlayList />} />
-      <BottomNavigationAction label="Settings" icon={<Settings />} />
+      <BottomNavigationAction centerRipple label="Home" icon={<HomeIcon />} />
+      <BottomNavigationAction
+        centerRipple
+        label="Search"
+        icon={<SearchIcon />}
+      />
+      <BottomNavigationAction
+        centerRipple
+        label="Playlist"
+        icon={<PlaylistIcon />}
+      />
+      <BottomNavigationAction
+        centerRipple
+        label="Settings"
+        icon={<SettingsIcon />}
+      />
     </BottomNavigation>
   );
 }

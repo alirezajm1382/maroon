@@ -10,7 +10,7 @@ export const themeOptions = {
   },
   typography: {
     fontFamily: "Comfortaa",
-    fontSize: 19,
+    fontSize: 15,
     button: {
       textTransform: "none",
     },
