@@ -33,5 +33,4 @@ export default NextAuth({
     }),
   ],
   secret: "04a3da97880fcedeb087378f29c3a102",
-  url: "https://maroon-alir3za.vercel.app/",
 });
